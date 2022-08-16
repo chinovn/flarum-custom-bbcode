@@ -1,0 +1,30 @@
+{
+    "name": "chinovn/flarum-custom-bbcode",
+    "description": "Custom BBCode for private forum.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "support": {
+        "forum": "https://discuss.flarum.org/",
+        "issues": "https://github.com/chinovn/flarum-custom-bbcode/issues",
+        "source": "https://github.com/chinovn/flarum-custom-bbcode"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.6 || ^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChinoVN\\BBCode\\Custom\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Custom BBCode for CQVN",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-file-code",
+                "backgroundColor": "#99cc33",
+                "color": "#FFFFFF"
+            }
+        }
+    }
+}
