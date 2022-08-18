@@ -23,7 +23,7 @@ return [
     	$config->BBCodes->addCustom('[COLUMNS]{ANYTHING3}[/COLUMNS]', '<div class="cb-columns">{ANYTHING3}</div>');	    
    	$config->BBCodes->addCustom('[FIGURE]{ANYTHING4}[/FIGURE]', '<figure class="cb-figure">{ANYTHING4}</figure>');
 	    
-	$config->BBCodes->addCustom('[NSFW]{ANYTHING5}[/NSFW]', '<div class="cb-nsfw">{ANYTHING5}<div class="cb-nsfw-blur" onclick="if(this.className == \'cb-nsfw-blur\'){this.className = \'cb-nsfw-show\';} else {this.className = \'cb-nsfw-blur\';}"><i class="icon fas fa-exclamation-triangle"></i> Nội dung này có thể gây khó chịu với một số người. Hãy cân nhắc trước khi nhấp vào để xem.</div></div>');
+	$config->BBCodes->addCustom('[NSFW]{ANYTHING5}[/NSFW]', '<div class="cb-nsfw">{ANYTHING5}<div class="cb-nsfw-hide" onclick="if(this.className == \'cb-nsfw-hide\'){this.className = \'cb-nsfw-show\';}"><i class="icon fas fa-exclamation-triangle"></i> Nội dung này có thể gây khó chịu với một số người. Hãy cân nhắc trước khi nhấp vào để xem.</div></div>');
 	$config->BBCodes->addCustom('[ACCORDION={NUMBER} {TEXT3}]{ANYTHING6}[/ACCORDION]', 
 	    
 	      '<div class="cb-tab">
