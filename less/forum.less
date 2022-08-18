@@ -38,17 +38,29 @@ figure.cb-figure {
 }
 
 
-.cb-nsfw-alert {
-  margin-botom: 5px;
+.cb-nsfw {
+    color: #aaa;
 }
 .cb-nsfw-blur {
-  filter: blur(15px);
-  margin: 20px;
+    background: rgba(0,0,0,0.97);
+    font-size: 16px;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
 }
-
+.cb-nsfw-blur .icon {
+    font-size: 60px;
+    margin-right: 5%;
+    }
 .cb-nsfw-show {
-  filter: blur(0);
-  transition: all .5s;
+    background: transparent;
+    color: transparent;
 }
 
 .cb-tab>input {
