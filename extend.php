@@ -24,6 +24,7 @@ return [
    	$config->BBCodes->addCustom('[FIGURE]{ANYTHING4}[/FIGURE]', '<figure class="cb-figure">{ANYTHING4}</figure>');
 	    
 	$config->BBCodes->addCustom('[NSFW]{ANYTHING5}[/NSFW]', '<div class="cb-nsfw">{ANYTHING5}<div class="cb-nsfw-hide" onclick="if(this.className == \'cb-nsfw-hide\'){this.className = \'cb-nsfw-show\';}"><i class="icon fas fa-exclamation-triangle"></i> Nội dung này có thể gây khó chịu với một số người. Hãy cân nhắc trước khi nhấp vào để xem.</div></div>');
+	
 	$config->BBCodes->addCustom('[ACCORDION={NUMBER} {TEXT3}]{ANYTHING6}[/ACCORDION]', 
 	    
 	      '<div class="cb-tab">
@@ -33,8 +34,7 @@ return [
 	      </div>
 	      ');
     
-    	$config->BBCodes->addCustom('[MAP]{TEXT}[/MAP]', '<iframe   width="100%" height="400px" style="border:0" loading="lazy"   allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=xxxx&q={TEXT}"></iframe>');
+    $config->BBCodes->addCustom('[MAP]{TEXT}[/MAP]', '<iframe   width="100%" height="400px" style="border:0" loading="lazy"   allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=xxxxxx&q={TEXT}"></iframe>');
     
-        
     })
 ];
