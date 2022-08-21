@@ -1,6 +1,6 @@
 
 .cb-box-shadow {
-  box-shadow: 	0px 2px 2px 0px rgba(128,128,128,0.2), 0px 3px 1px -2px rgba(128,128,128,0.2), 0px 1px 5px 0px rgba(128,128,128,0.2);
+  box-shadow: 	0px 2px 2px 0px rgba(128,128,128,0.2), 0px 3px 1px -2px rgba(128,128,128,0.2), 0px 1px 5px 0px rgba(128,128,128,0.2) !important;
   padding: 10px;
   margin: 10px;
 }
@@ -43,7 +43,7 @@ figure.cb-figure {
     position: relative;
 }
 .cb-nsfw-hide {
-    background: rgba(0,0,0,0.97);
+    background: rgba(0,0,0,0.97) !important;
     font-size: 16px;
     padding: 10%;
     display: flex;
@@ -57,12 +57,13 @@ figure.cb-figure {
     cursor: pointer;
 }
 .cb-nsfw-hide .icon {
-    font-size: 60px;
-    margin-right: 5%;
+        font-size: 60px;
+        margin-right: 5%;
     }
 .cb-nsfw-show {
     background: transparent;
     color: transparent;
+    display: none;
 }
 
 .cb-tab>input {
@@ -72,7 +73,7 @@ figure.cb-figure {
 }
 .cb-tab {
   width: 100%;
-  color: var(--button-primary-bg-active);
+  color: var(--button-primary-bg-active) !important;
   overflow: hidden;
   margin-bottom: 5px;
   border-radius: 10px;
@@ -87,7 +88,7 @@ figure.cb-figure {
     cursor: pointer;
     /* Icon */
     &:hover {
-      color: var(--button-primary-bg-hover);
+      color: var(--button-primary-bg-hover) !important;
     }
     &::after {
       content: "\276F";
@@ -103,7 +104,7 @@ figure.cb-figure {
     color: var(--text-color);
     background: transparent;
     transition: all .35s;
-    border-bottom: 1px solid hsl(240, 5%, 91%);
+    border-bottom: 1px solid hsl(240, 5%, 91%) !important;
   }
   &-close {
     display: flex;
@@ -121,9 +122,9 @@ figure.cb-figure {
 // :checked
 .cb-tab>input:checked {
   + .cb-tab-label {
-    color: var(--button-primary-bg);
+    color: var(--button-primary-bg) !important;
     font-weight: 700;
-    border-bottom: 1px solid hsl(240, 5%, 91%);
+    border-bottom: 1px solid hsl(240, 5%, 91%) !important;
     &::after {
       transform: rotate(90deg);
     }
@@ -131,6 +132,6 @@ figure.cb-figure {
   ~ .cb-tab-content {
     max-height: 100vh;
     padding: 1em;
-    border-bottom: 1px solid var(--button-primary-bg);
+    border-bottom: 1px solid var(--button-primary-bg) !important;
   }
 }
